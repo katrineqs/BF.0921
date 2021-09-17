@@ -58,7 +58,7 @@
 </header>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-<scrips src="js/script.js"></scrips>
+
 
 </body>
 </html>

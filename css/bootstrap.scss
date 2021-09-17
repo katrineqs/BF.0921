@@ -5,7 +5,6 @@
 $custom-colors: (
   "primary": #fff,
   "brandfarve": #325056
-  "danger": #7D959A
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 

@@ -31,12 +31,18 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 <div class="infoside bg-white">
-    <picture class="forsidebillede">
-        <source srcset="image/Forside7jpg.jpg" media="(max-width: 800px)">
-        <source srcset="image/Forside7jpg.jpg" media="(max-width: 1000px)">
-        <source srcset="image/Forside7jpg.jpg">
-        <img src="image/Forside7jpg.jpg" alt="image/Forside7jpg.jpg">
-    </picture>
+    <div class="topbillede">
+        <div class="zoom">
+            <img src="image/zionleft.png" class="zoom_layer zoom__layer--left js-zoom-zion-left">
+            <img src="image/zionright.png" class="zoom_layer zoom__layer--right js-zoom-zion-right">
+            <div class="zoom__text js-zoom-text">
+                <div>let the</div>
+                <div class="zoom__text--large">Adventure</div>
+                <div class="text-right">Begin</div>
+            </div>
+        </div>
+    </div>
+    <br>
     <ul class="nav justify-content-end">
         <li class="nav-item">
             <a class="nav-link active text-brandfarve" aria-current="page" href="index.php">Tilbage til start</a>
@@ -109,6 +115,7 @@
             </div>
         </div>
     </div>
+    <br>
     <br>
     <picture class="forsidebillede">
         <source srcset="image/kinmur.jpg" media="(max-width: 800px)">
@@ -188,7 +195,30 @@
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-<scrips src="js/script.js"></scrips>
+
+<script type="text/javascript">
+    const zoomZionLeft = document.querySelector('.js-zoom-zion-left');
+    const zoomZionRight = document.querySelector('.js-zoom-zion-right');
+    const zoomText = document.querySelector('.js-zoom-text');
+
+    document.addEventListener('scroll', () => {
+        const scroll = window.pageYOffset;
+        console.log(scroll);
+
+        zoomZionLeft.style.width = (100 + scroll/5) + '%';
+        zoomZionLeft.style.left = - scroll/5 +'%';
+        zoomZionLeft.style.bottom = - scroll/5 + '%';
+
+        zoomZionRight.style.width = (100 + scroll/5) + '%';
+        zoomZionRight.style.right = - scroll/5 + '%';
+        zoomZionRight.style.bottom = - scroll/5 + '%';
+
+        zoomText.style.bottom = scroll/7 + '%';
+    });
+
+
+</script>
+
 
 </body>
 </html>
