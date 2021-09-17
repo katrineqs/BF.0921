@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Jorden rundt</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -19,7 +19,7 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.scss" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,14 +30,35 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
-    <div class="bg-primary mb-5 py-3 px-5">Boks 1</div>
-    <div class="bg-secondary w-25 mx-auto my-4 p-3">Boks 2</div>
-    <div class="bg-warning">Boks 3</div>
-    <div class="bg-success">Boks 4</div>
-    <div class="bg-danger">Boks 5</div>
-    <div class="bg-logoColor">Boks 6</div>
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="underside.php">Jorden Rundt</a></li>
+                    <li><a href="underside.php">Blok</a></li>
+                    <li><a href="underside.php">Links</a></li>
+                    <li><a href="underside.php">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
+<header class="showcase">
+    <div class="container showcase-inner">
+        <img src="image/Logofinish1.png">
+        <br>
+        <a href="underside.php" class="btn">READY FOR TAKEOFF</a>
+    </div>
+</header>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<scrips src="js/script.js"></scrips>
 
 </body>
 </html>

@@ -3,8 +3,9 @@
 @import "../node_modules/bootstrap/scss/mixins";
 
 $custom-colors: (
-  "primary": #f0f,
-  "logoColor": #ff0
+  "primary": #fff,
+  "brandfarve": #325056
+  "danger": #7D959A
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 

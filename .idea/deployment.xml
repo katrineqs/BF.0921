@@ -5,7 +5,7 @@
       <paths name="WAMP">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/Opg.skole\opg.bootstrap.spacing" />
+            <mapping local="$PROJECT_DIR$" web="Opg.skole/BF.0921" />
           </mappings>
         </serverdata>
       </paths>
