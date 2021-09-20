@@ -51,7 +51,7 @@
 
 <header class="showcase">
     <div class="container showcase-inner">
-        <img src="image/Logofinish1.png">
+        <img src="image/PNG-LOGO-BE.png">
         <br>
         <a href="underside.php" class="btn">READY FOR TAKEOFF</a>
     </div>

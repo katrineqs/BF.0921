@@ -24,24 +24,24 @@
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-</head>
-
-
-<!-- i <body> har man alt indhold på siden som brugeren kan se -->
-<body>
-<div class="infoside bg-white">
+<div class="headerbillede">
     <div class="topbillede">
         <div class="zoom">
             <img src="image/zionleft.png" class="zoom_layer zoom__layer--left js-zoom-zion-left">
             <img src="image/zionright.png" class="zoom_layer zoom__layer--right js-zoom-zion-right">
             <div class="zoom__text js-zoom-text">
-                <div>let the</div>
-                <div class="zoom__text--large">Adventure</div>
-                <div class="text-right">Begin</div>
+                <div>lad</div>
+                <div class="zoom__text--large">Eventyret</div>
+                <div class="text-right">Begynde</div>
             </div>
         </div>
     </div>
+</div>
+
+</head>
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+<div class="infoside bg-white">
     <br>
     <ul class="nav justify-content-end">
         <li class="nav-item">
@@ -184,14 +184,16 @@
             </div>
         </div>
     </div>
-    <picture class="forsidebillede">
-        <source srcset="image/footer.jpg" media="(max-width: 800px)">
-        <source srcset="image/footer.jpg" media="(max-width: 1000px)">
-        <source srcset="image/footer.jpg">
-        <img src="image/footer.jpgg" alt="image/footer.jpg">
-    </picture>
+    <br>
+    <div class="footer">
+            <picture class="forsidebillede">
+                <source srcset="image/footer.jpg" media="(max-width: 800px)">
+                <source srcset="image/footer.jpg" media="(max-width: 1000px)">
+                <source srcset="image/footer.jpg">
+                <img src="image/footer.jpgg" alt="image/footer.jpg">
+            </picture>
+    </div>
 </div>
-
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
@@ -214,6 +216,7 @@
         zoomZionRight.style.bottom = - scroll/5 + '%';
 
         zoomText.style.bottom = scroll/7 + '%';
+
     });
 
 
@@ -221,4 +224,5 @@
 
 
 </body>
+
 </html>
